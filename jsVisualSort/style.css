@@ -1,0 +1,23 @@
+.wrapper{
+	width: 800px;
+	margin: auto;
+}
+#num-list{
+	display: flex;
+	height: 520px;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+}
+#myForm{
+	display: inline-block;
+}
+
+
+#num-list > div{
+display: inline-block;
+margin: 1px;
+width: 40px;
+height: 20px;
+text-align: center;
+background-color: #99CCFF;
+}
