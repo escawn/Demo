@@ -1,0 +1,35 @@
+.parentNode{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+.childNode1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+  width: 370px;
+  border: 1px solid #000;
+
+}
+.childNode2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 160px;
+  border: 1px solid #000;
+}
+.childNode3{
+  height: 250px;
+  width: 60px;
+  border: 1px solid #000;
+}
+.button{
+  width: 200px;
+  margin: auto;
+}
