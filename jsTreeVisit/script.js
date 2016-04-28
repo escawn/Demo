@@ -1,32 +1,32 @@
 var visitedList = [];
-var parent = document.getElementsByClassName("parentNode");
+var parent = document.getElementsByClassName("parentNode")[0];
 
 //遍历函数
 //先序遍历
 var preOrder = function(node){
-  if (node) {
+  if (node !== null) {
     visitedList.push(node);
-    preOrder(node.firstChild);
-    preOrder(node.lastChild);
+    preOrder(node.firstElementChild);
+    preOrder(node.lastElementChild);
 
   }
 }
 
 //中序遍历
 var inOrder = function(node){
-  if (node) {
-    inOrder(node.firstChild);
+  if (node !== null) {
+    inOrder(node.firstElementChild);
     visitedList.push(node);
-    inOrder(node.lastChild);
+    inOrder(node.lastElementChild);
 
   }
 }
 
 //后序遍历
 var postOrder = function(node){
-  if (node) {
-    postOrder(node.firstChild);
-    postOrder(node.lastChild);
+  if (node !== null) {
+    postOrder(node.firstElementChild);
+    postOrder(node.lastElementChild);
     visitedList.push(node);
 
   }
@@ -35,37 +35,48 @@ var postOrder = function(node){
 //渲染函数，呈现视觉效果用
 var render = function(){
   var int = setInterval(function(){
-    var s;
-    s = visitedList.shift();
-    if (s !== undefined) {
-      s.style.backgroundColor = "red";
+    clear();
+    var currentNode;
+    currentNode = visitedList.shift();
+    //alert(currentNode);
+    if (currentNode !== undefined) {
+      currentNode.style.backgroundColor = "red";
 
     }
     else {
       window.clearInterval(int);
     }
-  },100);
+  },500);
 
 }
 
 //清空函数
-//var clear() = function(){
-//  var div =
-//}
+var clear = function(){
+  var div = document.getElementsByTagName("div");
+  for(var index = 0;index < div.length;index++){
+    div[index].style.backgroundColor = "#fff";
+  }
+}
 
 var init = function(){
-  var button = document.getElementsByClassName('button');
-  button.addEventListener("click",function(e){
+  var btn = document.getElementsByClassName('button')[0];
+  btn.addEventListener("click",function(e){
     if (e.target&&e.target.className == "VLR") {
+      visitedList = [];
       preOrder(parent);
+      render();
     }
     if (e.target&&e.target.className == "LVR") {
+      visitedList = [];
       inOrder(parent);
+      render();
     }
     if (e.target&&e.target.className == "LRV") {
+      visitedList = [];
       postOrder(parent);
+      render();
     }
-  })
+  },false);
 }
 
 init();
