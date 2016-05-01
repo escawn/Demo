@@ -1,7 +1,6 @@
 //定义数据列表
 var dataList = [];
 var state = [];
-var colorList = ["#99CCFF","#99CCCC","#FFCCCC","#FFCC99","#FF6666"]
 
 //取得数据的函数，包括不合法数据的筛选
 function getData(){
