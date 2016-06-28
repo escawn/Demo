@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A Bootstrap Demo</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/myStyle.css">
+    </head>
+    <body>
+        <section class="body">
+            <header class="header">
+                <div class="logo-container"></div>
+                <!--logo链接-->
+                <a href="javasrcipt:void(0)"><i class="glyphicon glyphicon-user"></i>A Bootstrap Demo</a>
+                <!--手机屏响应-->
+                <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                </div>
+                <div class="header-right">
+                    <!--分离样式-->
+                    <span class="separator"></span>
+                    <!--提示事项-->
+                    <ul class="notifications">
+                        <li>
+                            <a href="javasrcipt:void(0)" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                                <span class="badge" id="messageNumber"></span>
+                            </a>
+                            <div class="dropdown-menu notification-menu large">
+                                <!--下拉菜单标题-->
+                                <div class="notification-title">
+                                    消息中心
+                                </div>
+                                <!--下拉菜单内容-->
+                                <div class="content" id="messageContent"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="separator"></span>
+                    <div id="userbox" class="userbox">
+                        <a href="javasrcipt:void(0)" data-toggle="dropdown">
+                            <div class="profile-info">
+                                <span id="username" class="name">用户名</span>
+                                <div class="row">
+                                    <h5 style="color: #f86f4b;">
+                                        <label class="col-md-4" style="text-align: right">
+                                            <span id="userID">用户编号</span>
+                                        </label>
+                                        <label class="col-md-8" style="text-align: right">
+                                            <img src="assets/images/admin.png">&nbsp;&nbsp;<span id="AccountRole">用户身份</span>
+                                        </label>
+                                    </h5>
+                                </div>
+                            </div>
+                            <i class="fa custom-caret"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <ul class="list-unstyled">
+                                <li class="divider"></li>
+                                <li>
+                                    <a role="menuitem" tabindex="-1" id="Logout_Btn" class="btn">
+                                        <i class="fa fa-power-off"></i>退出登录
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="inner-wrapper">
+                <aside class="sidebar-left">
+                    <div class="siderbar-header">
+                        <div class="sidebar-title"></div>
+                        <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                        </div>
+                    </div>
+                    <div class="nano">
+                      <div class="nano-content">
+                    <nav id="menu" class="nav-main" role="navigation">
+                        <ul class="nav nav-main" id="MenuOptions">
+                            <li id="pm">
+                                <a href="productManage.html">
+                                    <i id="iconProduct"><img src="assets/images/microphone01.png"></i>
+                                    <span>产品管理</span>
+                                </a>
+                            </li>
+                            <li id="am">
+                                <a href="javasrcipt:void(0)">
+                                    <i id="iconAgent"><img src="assets/images/agent01.png"></i>
+                                    <span>代理商管理</span>
+                                </a>
+                            </li>
+                            <li class="nav-active" id="sm">
+                                <a href="javasrcipt:void(0)">
+                                    <i id="iconStaff"><img src="assets/images/staff01.png"></i>
+                                    <span>员工管理</span>
+                                </a>
+                            </li>
+                            <li id="om">
+                                <a href="javasrcipt:void(0)">
+                                    <i id="iconOrder"><img src="assets/images/order01.png"></i>
+                                    <span>订单管理</span>
+                                </a>
+                            </li>
+                            <li id="ssm">
+                                <a href="javasrcipt:void(0)">
+                                    <i id="iconSerach"><img src="assets/images/statistics01.png"></i>
+                                    <span>统计查询</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                    </div>
+                </aside>
+                <section role="main" class="content-body">
+
+                </section>
+            </div>
+
+        </section>
+
+    </body>
+</html>
