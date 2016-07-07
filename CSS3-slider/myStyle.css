@@ -22,7 +22,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  animation: .5s slider-init linear;
+
 }
 
 .sliders li {
@@ -49,15 +49,6 @@
 .sliders li:target {
   left: 0%;
   animation: .5s slider-in linear;
-}
-
-@keyframes slider-init {
-  0% {
-    left: -100%
-  }
-  100% {
-    left: 0%;
-  }
 }
 
 @keyframes slider-out {
