@@ -1,69 +1,140 @@
-body{
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  font-size: 62%;
-  font-family: 微软雅黑;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 62%;
+    font-family: 微软雅黑;
 }
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
-a:link,a:visited{
-  color: #000000;
+a:link, a:visited {
+    color: #000000;
 }
-a:hover{
+a:hover {
+    color: #ffffff;
+    background-color: darkgrey;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+hr {
+    border: 2px dotted darkgrey;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 480px;
+    margin: 20px 0px;
+}
+.wrapper {
+    width: 1000px;
+    margin: 40px auto;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 750px;
+}
+.info> div, .contact> div {
+    display: inline-block;
+}
+.info {}
+.info span {
+    margin: 0 5px;
+}
+.name {
+    font-size: 2rem;
+}
+.name p {
+    font-size: 0.8rem;
+}
+.title {
+    position: relative;
+    top: 0;
+}
+.divider {
+    width: 1px;
+    height: 20px;
+    background-color: rgb(229, 229, 229);
+    overflow: hidden;
+}
+.contact span {
+    margin: 0 9px;
+}
+.inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.education,.workEpr{
+  margin: 50px 0;
+}
+.education> p,.workEpr > p{
+  font-size: 1rem;
+  margin: 0 auto;
+}
+.eduBackground,.eduSubject{
+  display: inline-block;
+
+    margin: 20px 60px;
+}
+.eduSubject{
+  margin: 20px 10px;
+}
+.small-circle,.middle-circle,.big-circle{
+  border-radius: 50%;
   color: #ffffff;
-  background-color: darkgrey;
-}
-ul{
-  padding: 0;
-}
-li{
-  list-style: none;
-}
-.wrapper{
-  width: 1000px;
-  margin: 40px auto;
 
 }
-header{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content:space-between;
-  width: 750px;
-}
-.info > div,.contact > div{
+.small-circle{
+  position: relative;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #a1a3a6;
+  line-height: 50px;
+  text-align: center;
   display: inline-block;
 }
-.info{
+.middle-circle{
+  width: 80px;
+  height: 80px;
+  font-size: 1rem;
+  line-height: 80px;
+  background-color: #d3d7d4;
+  text-align: center;
+  display: inline-block;
 }
-.info span{
+.big-circle{
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 1.2rem;
+  background-color: #8a8c8e;
+  text-align: center;
+}
+.text,.shaft,.time{
+  display: inline-block;
+}
+.line,.dot{
+  margin: 0;
+
+}
+.line{
+  width: 2px;
+  height: 50px;
+  background-color: darkgrey;
   margin: 0 5px;
 }
-.name{
-  font-size: 2rem;
-}
-.name p{
-  font-size: 0.8rem;
-}
-.title{
-  position: relative;
-  top: 0;
-}
-.divider{
-  width: 1px;
-  height:20px;
-  background-color: rgb(229, 229, 229);
-  overflow: hidden;
-}
-.contact span{
-  margin: 0 9px;
-}
-.inner-wrapper{
-  margin: 20px auto;
-  display: flex;
-  justify-content: space-between;
+.dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: darkgrey;
 }
