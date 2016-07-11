@@ -11,7 +11,7 @@
             <nav class="navbar navbar-default header" role="navigation">
                 <div class="logo-container">
                     <!--logo链接-->
-                    <a href="javasrcipt:void(0)">
+                    <a href="javascript:void(0)">
                         <i class="glyphicon glyphicon-cloud"></i>A Bootstrap Demo</a>
 
                 </div>
@@ -21,7 +21,7 @@
                     <span class="separator"></span>
                     <!--提示事项-->
                     <ul class="notifications dropdown">
-                        <a href="javasrcipt:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="glyphicon glyphicon-envelope"></i>
                             <i class="caret"></i>
                         </a>
@@ -79,30 +79,122 @@
                             </li>
                         </ul>
                 </ul>
-                <span class="separator"></span>
-                <ul class="tasks">
-                    <a href="javasrcipt:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+
+                <ul class="tasks dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="glyphicon glyphicon-list"></i>
                         <i class="caret"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <p>
+                                        <strong>Task1</strong>
+                                        <span class="pull-right text-muted">40% completed</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">40% 完成</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <p>
+                                        <strong>Task2</strong>
+                                        <span class="pull-right text-muted">30% completed</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                            <span class="sr-only">30% 信息</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <p>
+                                        <strong>Task3</strong>
+                                        <span class="pull-right text-muted">mixed</span>
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">40% 完成</span>
+                                        </div>
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                            <span class="sr-only">30% 完成（信息）</span>
+                                        </div>
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                            <span class="sr-only">20% 完成（警告）</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <strong>Read more...</strong>
+
+                                </div>
+
+                            </a>
+                        </li>
                     </ul>
             </ul>
-            <span class="separayor"></span>
-            <ul class="user">
-                <a href="javasrcipt:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+
+            <ul class="user dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                     <i class="glyphicon glyphicon-user"></i>
                     <i class="caret"></i>
                 </a>
                 <ul class="dropdown-menu">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div>
+                                <strong>
+                                    <i class="glyphicon glyphicon-pencil"></i>
+                                </strong>
+                                <span>编辑
+                                </span>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div>
+                                <strong>
+                                    <i class="glyphicon glyphicon-cog"></i>
+                                </strong>
+                                <span>设置
+                                </span>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <div>
+                                <strong>
+                                    <i class="glyphicon glyphicon-off"></i>
+                                </strong>
+                                <span>注销
+                                </span>
+                            </div>
+
+                        </a>
+                    </li>
                 </ul>
         </ul>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-left">
@@ -124,7 +216,7 @@
                     </span>
                 </div>
             </li>
-            <li>
+            <li class="active">
                 <a href="javasrcipt:void(0)">
                     <i class="glyphicon glyphicon-home"></i>
                     <span>Home Page</span>
@@ -142,13 +234,30 @@
                     <span>Picture silder</span>
                 </a>
             </li>
-
         </ul>
     </aside>
 </nav>
 <div class="inner-wrapper">
 
-    <section role="main" class="content-body"></section>
+    <section role="main" class="content-body">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <p>Home Page</p>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="panel">
+            <div class="panel-heading"></div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3"></div>
+        <div class="col-md-6 col-lg-3"></div>
+        <div class="col-md-6 col-lg-3"></div>
+      </div>
+    </section>
 </div>
 
 </section>

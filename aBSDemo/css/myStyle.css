@@ -23,7 +23,7 @@ a:link, a:visited, a:hover, a:active {
     margin: 0px 8px;
 }
 .navbar-right a{
-  padding: 24px 15px;
+  padding: 24px 20px;
 }
 .notifications, .tasks, .user {
     display: inline-block;
@@ -36,19 +36,13 @@ a:link, a:visited, a:hover, a:active {
     background-color: #eeeeee;
     cursor: pointer;
 }
-.dropdown-menu {
-    width: 310px;
-    right: 0;
+.dropdown-menu{
+  width: 310px;
 }
-.divider {
-    height: 1px;
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: #e5e5e5;
+.user>.dropdown-menu{
+  width: 160px;
 }
-.inner-wrapper {
-    padding-top: 60px;
-}
+
 .sidebar-left{
   padding: 0;
 }
@@ -62,6 +56,9 @@ a:link, a:visited, a:hover, a:active {
 
         min-height: 100%;
         width: 210px;
+    }
+    .inner-wrapper {
+        padding: 60px 0 0 210px;
     }
 }
 .sidebar-header {
@@ -77,4 +74,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .sidebar-search >.input-group{
   padding: 10px;
+}
+li.active{
+  background-color: #eee;
 }
