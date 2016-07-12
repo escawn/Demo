@@ -7,9 +7,7 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 .header {
-    position: fixed;
     width: 100%;
-    z-index: 1020;
     min-height: 60px;
     background-color: #f8f8f8;
     border-bottom: 1px solid #E9E9E6;
@@ -22,8 +20,11 @@ a:link, a:visited, a:hover, a:active {
 .logo-container i {
     margin: 0px 8px;
 }
-.navbar-right a{
-  padding: 24px 20px;
+.navbar{
+  margin: 0
+}
+.navbar-right a {
+    padding: 24px 20px;
 }
 .notifications, .tasks, .user {
     display: inline-block;
@@ -36,15 +37,14 @@ a:link, a:visited, a:hover, a:active {
     background-color: #eeeeee;
     cursor: pointer;
 }
-.dropdown-menu{
-  width: 310px;
+.dropdown-menu {
+    width: 310px;
 }
-.user>.dropdown-menu{
-  width: 160px;
+.user>.dropdown-menu {
+    width: 160px;
 }
-
-.sidebar-left{
-  padding: 0;
+.sidebar-left {
+    padding: 0;
 }
 @media (min-width: 768px) {
     .sidebar-left {
@@ -52,14 +52,16 @@ a:link, a:visited, a:hover, a:active {
         left: 0;
         top: 62px;
         background-color: #f8f8f8;
-        border-right: 1px solid #E9E9E6;
-
-        min-height: 100%;
+        border: 1px solid #E9E9E6;
         width: 210px;
+        min-height: 100%
     }
     .inner-wrapper {
-        padding: 60px 0 0 210px;
+        padding: 0 0 0 210px;
     }
+}
+.row {
+    margin: 0;
 }
 .sidebar-header {
     height: 40px;
@@ -68,13 +70,46 @@ a:link, a:visited, a:hover, a:active {
     display: inline-block;
     line-height: 40px;
 }
-.sidebar-left li{
-  border-bottom: 1px solid #E9E9E6;
-  font-size: 1.5rem;
+.sidebar-left li {
+    border-bottom: 1px solid #E9E9E6;
+    font-size: 1.5rem;
 }
-.sidebar-search >.input-group{
-  padding: 10px;
+.sidebar-search>.input-group {
+    padding: 10px;
 }
-li.active{
-  background-color: #eee;
+li.active {
+    background-color: #eee;
+}
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+.panel-yellow> .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+.panel-green {
+    border-color: #5cb85c;
+}
+.panel-green> .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+.panel-red {
+    border-color: #d9534f;
+}
+.panel-red> .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+.glyphicon-comment {
+    font-size: 5rem;
+}
+.text-right p {
+    margin: 0
+}
+.huge {
+    font-size: 4rem;
 }
