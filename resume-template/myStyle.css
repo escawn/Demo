@@ -29,7 +29,7 @@ hr {
     border-bottom: 0;
     border-right: 0;
     border-left: 0;
-    width: 480px;
+    width: 100%;
     margin: 20px 0px;
 }
 .wrapper {
@@ -71,6 +71,9 @@ header {
 .inner-wrapper {
     display: flex;
     justify-content: space-between;
+}
+.part1{
+  width: 45%;
 }
 .education,.workEpr{
   margin: 50px 0;
@@ -122,13 +125,48 @@ header {
 .text,.shaft,.time{
   display: inline-block;
 }
-.line,.dot{
+.text{
+  width: 60%;
+}
+.shaft{
+  width: 20%;
+  text-align: -webkit-center;
+}
+.text li{
+  margin-bottom: 30px;
+  border-bottom: 1px dashed darkgrey;
+}
+.text-title{
+  font-size: 0.8rem;
+  font-weight:bold;
+
+}
+.dot{
   margin: 0;
 
 }
-.line{
+
+.line1{
   width: 2px;
-  height: 50px;
+  height: 70px;
+  background-color: darkgrey;
+  margin: 0 5px;
+}
+.line2{
+    width: 2px;
+    height: 110px;
+    background-color: darkgrey;
+    margin: 0 5px;
+}
+.line3{
+  width: 2px;
+  height: 80px;
+  background-color: darkgrey;
+  margin: 0 5px;
+}
+.line4{
+  width: 2px;
+  height: 80px;
   background-color: darkgrey;
   margin: 0 5px;
 }
@@ -137,4 +175,20 @@ header {
   height: 12px;
   border-radius: 50%;
   background-color: darkgrey;
+}
+.time1{
+position: relative;
+bottom: 260px;
+}
+.time2{
+position: relative;
+bottom: 170px;
+}
+.time3{
+position: relative;
+bottom:95px;
+}
+.time4{
+position: relative;
+bottom:25px;
 }
