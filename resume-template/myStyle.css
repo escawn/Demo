@@ -141,9 +141,11 @@ header {
   font-weight:bold;
 
 }
-.dot{
-  margin: 0;
-
+.arrow{
+ border: 7px solid transparent;
+ border-bottom: 15px solid darkgrey;
+ width: 0;
+ height: 0px;
 }
 
 .line1{
@@ -174,6 +176,7 @@ header {
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  margin: 0;
   background-color: darkgrey;
 }
 .time1{
