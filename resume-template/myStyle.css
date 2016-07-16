@@ -24,7 +24,7 @@ ul {
 li {
     list-style: none;
 }
-hr {
+section > hr {
     border: 2px dotted darkgrey;
     border-bottom: 0;
     border-right: 0;
@@ -72,13 +72,13 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.part1{
+.part1,.part2{
   width: 45%;
 }
-.education,.workEpr{
+.education,.workEpr,.skills,.statement{
   margin: 50px 0;
 }
-.education> p,.workEpr > p{
+.education> p,.workEpr > p,.skills > p,.statement >p{
   font-size: 1rem;
   margin: 0 auto;
 }
@@ -194,4 +194,96 @@ bottom:95px;
 .time4{
 position: relative;
 bottom:25px;
+}
+.html,.css,.js,.others{
+  display: flex;
+  justify-content: space-between;;
+  margin: 20px 0;
+}
+.html-circle,.css-circle,.js-circle,.others-circle{
+
+  width: 100px;
+  height: 100px;
+  border:10px solid transparent;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 100px;
+}
+.html-circle{
+  border-top:10px solid darkgrey;
+  border-right:10px solid darkgrey;
+  border-bottom: 10px solid darkgrey;
+  border-left:10px solid lightgrey;
+}
+.point{
+  position: relative;
+    top: 50px;
+    right: 25px;
+
+}
+.point-dot,.point-line{
+  display: inline-block;
+  margin: 0;
+}
+.point-dot{
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.point-line{
+  position: relative;
+  bottom:2px;
+  right: 2px;
+  height: 1px;
+  width: 130px;
+  background-color: #000000;
+}
+.html-detail{
+  width: 180px;
+  height: 80px;
+  border-right: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  margin: 10px 0px;
+}
+.css-circle{
+  border-top:10px solid darkgrey;
+  border-right:10px solid darkgrey;
+  border-bottom: 10px solid darkgrey;
+  border-left:10px solid lightgrey;
+}
+.css-detail{
+  width: 180px;
+  height: 130px;
+  border-right: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+
+}
+.js-circle{
+  border-top:10px solid darkgrey;
+  border-right:10px solid darkgrey;
+  border-bottom: 10px solid lightgrey;
+  border-left:10px solid lightgrey;
+}
+.js-detail{
+  width: 180px;
+  height: 70px;
+  border-right: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  margin: 10px 0px;
+}
+.others-circle{
+  border-top:10px solid darkgrey;
+  border-right:10px solid darkgrey;
+  border-bottom: 10px solid lightgrey;
+  border-left:10px solid lightgrey;
+}
+.others-detail{
+  width: 180px;
+  height: 105px;
+  border-right: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  margin: 10px 0px;
 }
