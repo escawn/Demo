@@ -287,3 +287,8 @@ bottom:25px;
   border-bottom: 1px solid darkgrey;
   margin: 10px 0px;
 }
+
+.statement li{
+  list-style-type: disc;
+  margin: 10px;
+}
