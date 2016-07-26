@@ -1,3 +1,32 @@
 #Demo
 练手demo
 <p>实现过程及思路：http://www.jianshu.com/users/cd6a51ae6a7d/latest_articles</p>
+<ul>
+  <li>
+    <p><b>jsVisualSort</b></p>
+    <p>可根据输入对数据进行排序（冒泡），排序过程可视。</p>
+    <p>可随意删减/增加数据，也可随机生成。</p>
+  </li>
+  <li>
+    <p><b>jsTreeVisit</b></p>
+    <p>模仿树的遍历过程，具体思路可见 http://www.jianshu.com/p/574933988d18</p>
+  </li>
+  <li>
+    <p><b>resume-template</b></p>
+    <p>用html做的，自己设计的简历模板</p>
+    <p>也加了些个人信息在里面，求收留(๑>◡<๑)</p>
+  </li>
+  <li>
+    <p><b>CSS3-slider</b></p>
+    <p>纯css3实现的图片切换，暂不能自动轮播</p>
+  </li>
+  <li>
+    <p><b>aBSDemo</b></p>
+    <p>一个Bootstrap练习实例</p>
+    <p>以学生管理系统为主题，纯前端</p>
+  </li>
+  <li>
+    <p><b>annulus-progress</b></p>
+    <p>css3动画实现环形进度条</p>
+  </li>
+</ul>
