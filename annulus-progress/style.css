@@ -1,0 +1,21 @@
+.right-side{
+    position: relative;
+    width: 100px;
+    height: 200px;
+    overflow: hidden;
+}
+.right-circle{
+    width: 160px;
+    height: 160px;
+    border:20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    right: 0;
+    border-top:20px solid green;
+    border-right:20px solid green;
+    -webkit-transform : rotate(45deg);
+    -moz-transform : rotate(45deg);
+    -o-transform : rotate(45deg);
+    transform : rotate(45deg); /* 旋转45度 */
+}
