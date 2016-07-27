@@ -18,4 +18,17 @@
     -moz-transform : rotate(45deg);
     -o-transform : rotate(45deg);
     transform : rotate(45deg); /* 旋转45度 */
+    -webkit-animation: right-round 5s linear infinite;
+    -moz-tanimation: right-round 5s linear infinite;
+    -o-animation: right-round 5s linear infinite;
+    animation: right-round 5s linear infinite;
+
+}
+@keyframes right-round {
+  0%{
+        transform : rotate(-135deg);
+    }
+    100%{
+        transform : rotate(45deg);
+    }
 }
