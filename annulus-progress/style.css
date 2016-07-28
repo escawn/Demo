@@ -1,5 +1,11 @@
+.progress{
+  margin: 100px;
+  /*把进度条放在任意想要的位置*/
+}
 .right-side{
     position: relative;
+    top: 0px;
+    left: 100px;
     width: 100px;
     height: 200px;
     overflow: hidden;
@@ -24,11 +30,48 @@
     animation: right-round 5s linear infinite;
 
 }
+.left-side{
+    position: relative;
+    top: -200px;
+    left: 0;
+    width: 100px;
+    height: 200px;
+    overflow: hidden;
+}
+.left-circle{
+    width: 160px;
+    height: 160px;
+    border:20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+    border-bottom:20px solid green;
+    border-left:20px solid green;
+    -webkit-transform : rotate(45deg);
+    -moz-transform : rotate(45deg);
+    -o-transform : rotate(45deg);
+    transform : rotate(45deg); /* 旋转45度 */
+    -webkit-animation: left-round 5s linear infinite;
+    -moz-tanimation: left-round 5s linear infinite;
+    -o-animation: left-round 5s linear infinite;
+    animation: left-round 5s linear infinite;
+
+}
+
 @keyframes right-round {
   0%{
         transform : rotate(-135deg);
     }
-    100%{
+  50%,100%{
         transform : rotate(45deg);
     }
+}
+@keyframes left-round {
+  0%,50%{
+    transform: rotate(-135deg);
+  }
+  100%{
+    transform : rotate(45deg);
+  }
 }
