@@ -1,8 +1,11 @@
-.progress{
-  margin: 100px;
-  /*把进度条放在任意想要的位置*/
+.progress,.progress2,.progress3 {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    /*把进度条放在任意想要的位置*/
 }
-.right-side{
+.right-side, .right-side2,.right-side3 {
     position: relative;
     top: 0px;
     left: 100px;
@@ -10,27 +13,27 @@
     height: 200px;
     overflow: hidden;
 }
-.right-circle{
+.right-circle,.right-circle2,.right-circle3,.right-circle3-2{
     width: 160px;
     height: 160px;
-    border:20px solid transparent;
+    border: 20px solid transparent;
     border-radius: 50%;
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
-    border-top:20px solid green;
-    border-right:20px solid green;
-    -webkit-transform : rotate(45deg);
-    -moz-transform : rotate(45deg);
-    -o-transform : rotate(45deg);
-    transform : rotate(45deg); /* 旋转45度 */
+    border-top: 20px solid green;
+    border-right: 20px solid green;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /* 旋转45度 */
     -webkit-animation: right-round 5s linear infinite;
     -moz-tanimation: right-round 5s linear infinite;
     -o-animation: right-round 5s linear infinite;
     animation: right-round 5s linear infinite;
-
 }
-.left-side{
+.left-side,.left-side2,.left-side3{
     position: relative;
     top: -200px;
     left: 0;
@@ -38,40 +41,115 @@
     height: 200px;
     overflow: hidden;
 }
-.left-circle{
+.left-circle,.left-circle2,.left-circle3,.left-circle3-2{
     width: 160px;
     height: 160px;
-    border:20px solid transparent;
+    border: 20px solid transparent;
     border-radius: 50%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-    border-bottom:20px solid green;
-    border-left:20px solid green;
-    -webkit-transform : rotate(45deg);
-    -moz-transform : rotate(45deg);
-    -o-transform : rotate(45deg);
-    transform : rotate(45deg); /* 旋转45度 */
+    border-bottom: 20px solid green;
+    border-left: 20px solid green;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /* 旋转45度 */
     -webkit-animation: left-round 5s linear infinite;
     -moz-tanimation: left-round 5s linear infinite;
     -o-animation: left-round 5s linear infinite;
     animation: left-round 5s linear infinite;
-
 }
-
 @keyframes right-round {
-  0%{
-        transform : rotate(-135deg);
+    0% {
+        transform: rotate(-135deg);
     }
-  50%,100%{
-        transform : rotate(45deg);
+    50%, 100% {
+        transform: rotate(45deg);
     }
 }
 @keyframes left-round {
-  0%,50%{
+    0%, 50% {
+        transform: rotate(-135deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+.right-circle2 {
+    border-top: 20px solid green;
+    border-right: 20px solid yellow;
+}
+.left-circle2 {
+    border-bottom: 20px solid red;
+    border-left: 20px solid blue;
+}
+.right-circle3{
+  z-index: 1;
+  border-top: 20px solid green;
+  border-right: 20px solid green;
+  -webkit-animation: right-round1 5s linear infinite;
+  -moz-tanimation: right-round1 5s linear infinite;
+  -o-animation: right-round1 5s linear infinite;
+  animation: right-round1 5s linear infinite;
+}
+.right-circle3-2{
+  z-index: 0;
+  border-top: 20px solid yellow;
+  border-right: 20px solid yellow;
+  -webkit-animation: right-round2 5s linear infinite;
+  -moz-tanimation: right-round2 5s linear infinite;
+  -o-animation: right-round2 5s linear infinite;
+  animation: right-round2 5s linear infinite;
+}
+.left-circle3{
+  z-index: 1;
+  border-bottom: 20px solid red;
+  border-left: 20px solid red;
+  -webkit-animation: left-round1 5s linear infinite;
+  -moz-tanimation: left-round1 5s linear infinite;
+  -o-animation: left-round1 5s linear infinite;
+  animation: left-round1 5s linear infinite;
+}
+.left-circle3-2{
+  z-index: 0;
+  border-bottom: 20px solid blue;
+  border-left: 20px solid blue;
+  -webkit-animation: left-round2 5s linear infinite;
+  -moz-tanimation: left-round2 5s linear infinite;
+  -o-animation: left-round2 5s linear infinite;
+  animation: left-round2 5s linear infinite;
+}
+@keyframes right-round1{
+  0%{
     transform: rotate(-135deg);
   }
-  100%{
-    transform : rotate(45deg);
+  25%,100%{
+    transform: rotate(-45deg);
   }
+}
+@keyframes right-round2{
+  0%{
+    transform: rotate(-135deg);
+  }
+  50%,100%{
+    transform: rotate(45deg);
+  }
+}
+@keyframes left-round1 {
+    0%, 50% {
+        transform: rotate(-135deg);
+    }
+    75%,100% {
+        transform: rotate(-45deg);
+    }
+}
+@keyframes left-round2 {
+    0%, 50% {
+        transform: rotate(-135deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
 }
