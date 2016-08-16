@@ -29,4 +29,8 @@
     <p><b>annulus-progress</b></p>
     <p>css3动画实现环形进度条</p>
   </li>
+  <li>
+  	<p><b>scrollBar</b></p>
+  	<p>一个无缝循环滚动的列表效果，数据存在json里，js原生动态插入。</p>
+  </li>
 </ul>

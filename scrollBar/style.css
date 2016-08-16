@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+.noti {
+  display: flex;
+  align-items: center;
+  height: 66px;
+  margin-top: 154px;
+  padding: 0 0 0 25px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.noti-img{
+  width: 35px;
+  height:38px;
+}
+.noti-img > img{
+  width: 35px;
+  height:38px;
+}
+.noti-divider{
+  height: 31px;
+  width: 1px;
+  margin:0 15px;
+  background-color: #cccccc;
+}
+.noti-info{
+  height: 100%;
+  overflow: hidden;
+  font-family:"PingFang SC Light","Heiti SC","San Francisco","Helvetica";
+}
+.noti-info > ul{
+  position: relative;
+}
+.noti-info > ul > li{
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 13px;
+}
+.noti-dot{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #f6435c;
+}
+.noti-time{
+  padding: 0 12px 0 8px;
+
+}
+.noti-text{
+  padding: 0 12px;
+}
