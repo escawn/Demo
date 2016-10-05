@@ -33,4 +33,8 @@
   	<p><b>scrollBar</b></p>
   	<p>一个无缝循环滚动的列表效果，数据存在json里，js原生动态插入。</p>
   </li>
+  <li>
+  	<p><b>book</b></p>
+  	<p>参照 http://kuka.im/2016/05/16/nodejs-spider/ 做的基于node.js的简单爬虫，爬取内容为豆瓣最受关注图书榜</p>
+  </li>
 </ul>
